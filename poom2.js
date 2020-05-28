@@ -30,11 +30,7 @@ var myLeftBtn;
 var myRightBtn;
 function controller(){   
 var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-
-//if it is mobile
 if (isMobile) {
-	
-	//display left and right button
     myLeftBtn = new component(90, 90, "rgba(0, 6, 179, 0.1)", 0, 500); 
 	myRightBtn = new component(90, 90, "rgba(0, 6, 179, 0.1)", 310, 500);
 	}//if   
@@ -44,7 +40,7 @@ if (isMobile) {
 function component(width, height, color, x, y) {
 	
 	//apply color, heigh, width, x position and y position
-    update = function() {
+    this.update = function() {
             ctx.fillStyle = color;
             ctx.fillRect(x, y, width, height);
     }//update
@@ -437,6 +433,9 @@ var goToHome = function(){
 		
 		//store the best score to the local storage	
 		if (typeof(Storage) !== "undefined") {
+			if(localStorage.BestPoint == undefined){
+				localStorage.BestPoint = 0;
+			}
 			if(localStorage.BestPoint < points){
 				localStorage.BestPoint = points;
 			}//if
