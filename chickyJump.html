@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Chicky Jump</title>
+	<link rel="stylesheet" href="poom.css">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!--PWA-->
+<link rel="apple-touch-icon" sizes="57x57" href="PWA/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="PWA/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="PWA/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="PWA/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="PWA/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="PWA/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="PWA/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="PWA/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="PWA/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="PWA/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="PWA/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="PWA/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="PWA/favicon-16x16.png">
+<link rel="manifest" href="PWA/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="PWA/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+	<!--PWA-->
+	<!--google font-->
+	<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+</head>
+<body>
+    
+	<canvas id="c"></canvas>
+	<div id="startingPage">
+	<img src="images/jump1.png" alt="logo">
+	<img src="images/jump2.png" alt="logo">
+	<img id="chicken" src="images/bird4.png" alt="logo">
+	<button class="button button1" onclick="goToPlay()">Play NOW!</button>
+	<button class="button button2" onclick="goToInstruction()">Instruction</button>
+	<button class="button button3" onclick="goToCredits()">Credits</button>
+	<button id="end" class="end" onclick="replay()">Replay</button>
+	<div>
+
+    <div id="instruction">
+    <button class="button button4" onclick="goToHome()">Back</button>
+	<img id="instruction2" src="images/instruction.png" alt="logo">
+    </div>
+    </div>
+
+    <div id="credits">
+    <button class="button button4" onclick="goToHome()">Back</button>
+	<div id="path">Code Pathfore</div>
+	<a id="link1" class="reference" href="https://michalbe.blogspot.com/2010/09/simple-game-with-html5-canvas-part-1.html?fbclid=IwAR09FY2VFt8qdltCBYO10Z-ZGhe_jxuTrTYFpKAnyVBtSDnNC70d0z7j3-E">1. Pathform by Michal Budzynski</a>
+	<div id="tutor">tutoral web</div>
+	<a id="link2" class="reference" href="https://www.w3schools.com/">1. keyboard controller</a>
+	<a id="link3" class="reference" href="https://developer.mozilla.org/en-US/docs/Web/API/Touch_events?fbclid=IwAR3Rlkrr1mEzVH9JNHBICNgKp9IIq92yu3UbqeAfJf-L2DtPmbA2qwZV1AA">2. touch controller by Florian Scholz</a>
+	<a id="link4" class="reference" href="http://cssdeck.com/labs/nlz4oplt">3. some game functions by Kushagra Agarwal</a>
+	<div id="code">small code Snippets</div>
+	<a id="link5" class="reference" href="https://stackoverflow.com/questions/11381673/detecting-a-mobile-browser">1. Detecting a mobile browser by Santhosh</a>
+	<a id="link6" class="reference" href="http://cssdeck.com/labs/nlz4oplt">1. A few game functions by Kushagra Agarwal</a>
+	<div id="pic">Images</div>
+	<a id="link7" class="reference" href="https://www.mvcode.com/lessons/doodle-jump">1. Background</a>
+	<a id="link8" class="reference" href="https://opengameart.org/content/bevouliin-free-flappy-chicken?fbclid=IwAR3IaQyUaOoSMR7SdUvtrgaMhVsUs40DN9J619CNeXWWtu_PcK6893ETIU8">2. Charactor by bevouliin.com</a>
+    </div>
+
+    <img src="images/bg.png" id="bg" alt="background">
+	<!--preload javescript-->
+	<script src="poom2.js"></script>
+	<!--crdit for icon app-->
+	<!--<div>Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+    -->
+    
+<!--PWA-->
+<script>
+/** Ths PWA code is from https://www.pwabuilder.com/serviceworker **/
+//This is the "Offline copy of pages" service worker
+
+//Add this below content to your HTML page, or add the js file to your page at the very top to register service worker
+if (navigator.serviceWorker.controller) {
+  console.log('[PWA Builder] active service worker found, no need to register')
+} else {
+  //Register the ServiceWorker
+  navigator.serviceWorker.register('pwabuilder-sw.js', {
+    scope: './'
+  }).then(function(reg) {
+    console.log('Service worker has been registered for scope:'+ reg.scope);
+  });
+}
+</script>
+</body>
+</html>
+
+
+
+
