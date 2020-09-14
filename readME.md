@@ -1,5 +1,5 @@
 # Chicky Jump Game
-Reference Code: https://michalbe.blogspot.com/2010/09/tutorial-simple-game-with-html5-canvas_19.html 
+Credit: https://michalbe.blogspot.com/2010/09/tutorial-simple-game-with-html5-canvas_19.html 
 
 Chicky Jump Game is a PWA JavaScript Canvas game that supports PC, IOS and Android platforms developed from an online open-source code. It means to challenge players to jump up through a series of platforms and beat the highest score. 
 
