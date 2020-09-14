@@ -10,7 +10,7 @@ Check out this link: [https://chicky-jump.herokuapp.com/](https://chicky-jump.he
 ## How does Chicky Jump game work?
 1. Make the game environments suitable for a device that players are using
 2. Tap Play NOW! on HomePage to call a gameLoop to draw a character and generate platforms
-3. Control horizontal movements of character by arrow/blue buttons
+3. Control horizontal movements of character through arrow/blue buttons
 4. Increase the vertical velocity to the character if it is not on the air (it touches the ground)
 5. Apply gravity to the character
 6. Repeat the gameLoop to update character's and platforms' positions every 30 milliseconds
