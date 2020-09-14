@@ -5,7 +5,7 @@ Chicky Jump Game is a PWA JavaScript Canvas game that supports PC, IOS and Andro
 
 Doodle Jump is one of my favorite games when I was in grade 10. This inspired me to make a Doodle Jump game in my version when I started learning to code.  
 
-Check out this link: [https://chicky-jump.herokuapp.com/](https://chicky-jump.herokuapp.com/)
+**Check out this link**: [https://chicky-jump.herokuapp.com/](https://chicky-jump.herokuapp.com/)
 
 ## How does Chicky Jump game work?
 1. Make the game environments suitable for a device that players are using
