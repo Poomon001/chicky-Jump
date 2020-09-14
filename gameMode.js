@@ -330,7 +330,7 @@ var GameLoop = function(){
 	if (player.isFalling) player.checkFall();
 	player.draw();//draw character
     
-	//moving pathform
+	//moving pltform
 	platforms.forEach(function(platform, index){
 		if (platform.isMoving) {
 			if (platform.x < 0) {
